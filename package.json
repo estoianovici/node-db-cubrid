@@ -1,0 +1,30 @@
+{ "name" : "db-cubrid"
+, "description" : "CUBRID database bindings for Node.JS"
+, "keywords": ["database","db","native","binding","library","plugin","client","cubrid","libcubrid"]
+, "homepage" : "http://nodejsdb.org/db-cubrid"
+, "version" : "0.0.1"
+, "engines" : { "node" : ">=0.4.1" }
+, "maintainers" :
+  [ { "name": "Eugen Stoianovici"
+    , "email": "eugen.stoianovici@cubrid.org"
+    }
+  ]
+, "bugs" : { "url" : "n/a" }
+, "licenses" : [ { "type" : "MIT" } ]
+, "repositories" :
+  [ { "type" : "git"
+    , "url" : "git://github.com/estoianovici/mytst.git"
+    }
+  ]
+, "main" : "./db-cubrid"
+, "scripts" :
+  { "install": "node-waf configure build"
+  , "preuninstall": "rm -rf build/*"
+  , "test" : "node-waf test"
+  , "doc" : "node-waf doc"
+  }
+, "devDependencies" :
+  { "nodeunit" : "*"
+  , "nodelint" : "*"
+  }
+}
